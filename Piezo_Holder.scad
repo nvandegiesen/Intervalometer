@@ -8,7 +8,7 @@ width_rim=1.0;
 width_bottom=5.0;
 height=10;
 height_bottom=3;
-radius_hole=1.25;
+radius_hole=1.6;
 rad1=radiusPiezo+width_rim;
 rad2=radiusPiezo-width_bottom;
 rad3=radiusPiezo-width_inlay;
@@ -24,7 +24,7 @@ h1=height-height_bottom;
         translate ([0,0,-2])
         cylinder (r=radius_hole,h=height);
       //Slot for solder
-        translate ([0,rad4-2,height])
+        translate ([0,rad4-2.75,height])
         cube(size = [3,4,4], center = true);
     }
     
