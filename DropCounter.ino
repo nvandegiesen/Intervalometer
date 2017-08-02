@@ -2,8 +2,8 @@
   DropCounter
     1 This program continuously reads the voltage on Pin A3.
     2 When the voltage exceed a set threshold, a drop is assumed to be detected. 
-    3 The time interval in miliseconds between drops are calculated and reported.
-    4 After a drop has been detected, Pin 6 and Pin 8 ar eset HIGH to shorten the the piezo and capacitor
+    3 Time intervals in miliseconds between drops are calculated and reported.
+    4 After a drop has been detected, Pin 6 and Pin 8 are set HIGH to shorten the the piezo and capacitor
     
     See https://github.com/nvandegiesen/Intervalometer/wiki/Intervalometer for the circuit and further explanations.
   
