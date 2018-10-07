@@ -8,7 +8,7 @@
  *            DECLARATIONS
  * -----------------------------------------*/
 
-const char DeviceID[]    = "22";    // Unique board ID for the intervalometer (alphanumeric values, total unique IDs can be 1296 i.e. 36^2)
+const char DeviceID[]    = "0E";    // Unique board ID for the intervalometer (alphanumeric values, total unique IDs can be 1296 i.e. 36^2)
 
 // INPUT/OUTPUT pins declaration
 const int csPin          = 10;      // pin tO communicate with SD card
@@ -60,6 +60,7 @@ void setup()
     while(1);            // Wait here forever, if RTC have failed to initialise
   }
 
+  // rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   // Upload the following line once, if RTC is not correct:
   now = rtc.now();  
   String timeString = String(now.day()) + "/" + String(now.month()) + "/" + String(now.year()) + " , " 
               + String(now.hour()) + ":" + String(now.minute()) + ":" + String(now.second());
